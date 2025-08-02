@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Introvert/Extrovert Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Personality Predictor</h1>
+    <form id="predict-form">
+      <label>Time Spent Alone (hours):
+        <input type="number" name="Time_spent_Alone" min="1" required>
+      </label>
+
+      <label>Stage Fear:
+        <select name="Stage_fear">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </label>
+
+      <label>Social Event Attendance (times/week):
+        <input type="number" name="Social_event_attendance" min="0" required>
+      </label>
+
+      <label>Going Outside (times/week):
+        <input type="number" name="Going_outside" min="1" required>
+      </label>
+
+      <label>Drained After Socializing:
+        <select name="Drained_after_socializing">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </label>
+
+      <label>Friends Circle Size:
+        <input type="number" name="Friends_circle_size" min="0" required>
+      </label>
+
+      <label>Post Frequency (per week):
+        <input type="number" name="Post_frequency" min="0" required>
+      </label>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="result"></div>
+    <div id="confidence"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
